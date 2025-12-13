@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  transition: all .2s ease;
+  font-family: 'Ubuntu';
+  /* border: 1px red solid; */
+}
+
+:root {
+  --dark-back: #1974BC;
+  --lighter-back: #4796D5;
+  --white-back: #AFCEE6;
+  --dark-accent: #004479;
+  --light-accent: #0C91FB;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.flex, nav {
+  display: flex;
+}
+
+.link {
+  text-decoration: none;
+}
+
+nav {
+  width: 100vw;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3vh 5vw;
+  position: fixed;
+  top: 0;
+}
+
+nav .link {
+  color: white;
+}
+
+nav .link:hover {
+  transform: scale(1.1);
+}
+
+
+.icon {
+  width: 20px;
+}
+
+/* вставить для регистрации */
+
+/* General container styles for responsiveness */
+.range-container {
+    width: 80%; /* Responsive width */
+    max-width: 400px; /* Max width for large screens */
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type=range] {
+    /* Reset default appearance */
+    -webkit-appearance: none;
+    appearance: none;
+    width: 70%; /* Responsive width within the container */
+    cursor: pointer;
+    background: transparent; /* Make the default track transparent */
+}
+
+/* Common styles for the thumb (slider handle) */
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background: #4CAF50; /* A nice green color */
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    margin-top: -6px; /* Center the thumb vertically on the track */
+}
+
+input[type=range]::-moz-range-thumb {
+    height: 20px;
+    width: 20px;
+    background: #4CAF50;
+    border-radius: 50%;
+    border: 1px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Common styles for the track (the bar) */
+input[type=range]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: #ddd; /* Light grey track background */
+    border-radius: 4px;
+}
+
+input[type=range]::-moz-range-track {
+    height: 8px;
+    background: #ddd;
+    border-radius: 4px;
+}
+
+/* Add an active state for better UX */
+input[type=range]:hover::-webkit-slider-thumb {
+    background: #45a049;
+}
+input[type=range]:hover::-moz-range-thumb {
+    background: #45a049;
+}
+
+/* Optional: Media query for extra small screens */
+@media screen and (max-width: 600px) {
+    .range-container {
+        flex-direction: column; /* Stack elements vertically on small screens */
+        align-items: flex-start;
+    }
+    input[type=range] {
+        width: 100%; /* Full width when stacked */
+        margin-top: 10px;
+    }
+}

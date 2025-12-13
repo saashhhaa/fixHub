@@ -1,0 +1,194 @@
+.masterRegis {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to top, var(--dark-back), rgba(38, 40, 100, 0.68));
+
+}
+
+.masterRegis .container {
+  background-color: rgba(255, 255, 255, 0.868);
+  border-radius: 10px;
+  border: 1.5px solid white;
+  width: 90%;
+  margin-top: 8vh;
+  /* height: 70%; */
+  padding: 6vh 10vw;
+}
+
+.masterRegis h2 {
+  margin-bottom: 5vh;
+}
+
+.masterRegis .cover {
+  margin-bottom: 5vh;
+  display: flex;
+  align-items: center;
+  width: 30vw;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.masterRegis input, select {
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  padding: 5px 20px;
+}
+
+.masterRegis input:hover {
+  box-shadow:  0 2px 5px rgba(119, 124, 169, 0.495);
+}
+
+.masterRegis label {
+  font-weight: 500;
+}
+
+.masterRegis .photoUpload {
+  position: absolute;
+  right: 10vw;
+  top: 30vh;
+}
+
+.photoBox {
+  width: 200px;
+  height: 200px;
+  background-color: rgba(200, 205, 235, 0.507);
+  border: 2px dashed rgba(74, 86, 136, 0.5);
+  color: rgba(74, 86, 136, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.photoBox:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.photoIcon {
+  width: 40px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+
+.photoUpload span {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+
+/*  */
+
+.sliderMoney .rc-slider-rail {
+  height: 6px;
+  background-color: #c1d3e7; /* светлый фон, чтобы не сливался */
+  border-radius: 3px;
+  
+}
+
+.sliderWrapper {
+  background-color: #ffffff;
+  padding: 2vh 2vw;
+  border-radius: 10px;
+}
+
+.moneyValues {
+  margin-top: 2vh;
+  width: 100px;
+  margin-left: 20px;
+  font-size: 10px;
+
+}
+
+.sliderMoney .rc-slider-track {
+  height: 6px;
+  background-color: #1597ff;
+  border-radius: 3px;
+}
+
+.sliderMoney .rc-slider-handle {
+  width: 22px;
+  height: 22px;
+
+  margin-top: -8px; /* чтобы хэндл ровно лег на трек */
+  background-color: #ffffff;
+  border: 3px solid #1597ff;
+
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.sliderMoney .rc-slider-handle:active {
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.6);
+}
+
+.masterRegis button {
+    padding: 10px 20px;
+  border-radius: 30px;
+  /* width: 20%; */
+  border: none;
+  color: white;
+  background-color: var(--dark-accent);
+  font-size: 12px;
+  cursor: pointer;
+}
+
+/*  */
+
+.regisChoosing {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.42), #1973bc79);
+  /* position: relative; */
+}
+
+ .logotype {
+  position: absolute;
+  top: 2vh;
+  left: 5vw;
+}
+
+.regisChoosing .container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5vh 5vw;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px rgba(41, 64, 113, 0.543);
+}
+
+.regisChoosing .flex {
+  gap: 10vw;
+}
+
+.regisChoosing h2 {
+  margin-bottom: 5vh;
+}
+
+.regisChoosing .link {
+  background-color: white;
+  color: var(--light-accent);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1.5px solid var(--light-accent);
+  opacity: 0.5;
+}
+
+.regisChoosing .link:hover {
+  transform: scale(1.1);
+  /* background-color: var(--light-accent); */
+  opacity: 1;
+}
+
