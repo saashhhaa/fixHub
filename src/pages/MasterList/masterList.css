@@ -1,0 +1,120 @@
+.masterList {
+  min-height: 100vh;
+  background-color: #f4f6fb;
+}
+
+.masterList .container {
+  padding: 5vh 5vw;
+}
+
+/* ===== Header ===== */
+
+.listHeader {
+  margin-top: 10vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4vh;
+}
+
+.searchInfo h2 {
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+
+.searchInfo p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* ===== Cards ===== */
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  margin-top: 10vh;
+
+}
+
+.masterCard {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1.5px solid #3a86ff;
+
+  transition: 0.2s;
+}
+
+.masterCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.masterCard img {
+  width: 80px;
+  height: 80px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* ===== Info ===== */
+
+.masterCard .info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.masterCard .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rating {
+  font-size: 14px;
+  color: #3a86ff;
+}
+
+.rating span {
+  color: #888;
+  margin-left: 5px;
+}
+
+.profession {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.price {
+  font-weight: 600;
+}
+
+.masterList .filter .apply {
+    color: #3a86ff;
+}
+
+.masterList .filter .selectedFilter {
+    display: none;
+}
+
+.masterList .filter .dropdown {
+    background-color: rgb(230, 236, 250) !important;
+}
+
+.masterCard {
+     text-decoration: none;
+  color: inherit;
+    cursor: pointer;
+}
+
+.masterList .navLink {
+    color: black;
+}

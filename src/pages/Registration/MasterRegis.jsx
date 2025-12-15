@@ -32,6 +32,14 @@ export const MasterRegis = () => {
             <option value="">Нет опыта</option>
           </select>
         </div>
+         <div className="cover">
+          <label>Почта</label>
+          <input type="email" placeholder="example@gmail.com" />
+        </div>
+          <div className="cover">
+          <label>Придумайте пароль</label>
+          <input type="password" placeholder="" />
+        </div>
 
         <div className="cover moneyRange">
           <label>Желаемый денежный диапазон</label>
